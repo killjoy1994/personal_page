@@ -1,0 +1,14 @@
+@import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto&display=swap');
+
+.app {
+  background-image: url(./assets/background.jpg);
+  background-repeat: no-repeat;
+  min-height: 100vh;
+  background-attachment: fixed;
+  font-family: 'Roboto', sans-serif;
+  box-sizing: border-box;
+}
+
+.logo {
+  font-family: 'Amatic SC', cursive;
+}
