@@ -1,8 +1,10 @@
 @import url('https://fonts.googleapis.com/css2?family=Amatic+SC&family=Roboto&display=swap');
 
 .app {
+  /* width: 100vw; */
   background-image: url(./assets/background.jpg);
   background-repeat: no-repeat;
+  background-size: cover;
   min-height: 100vh;
   background-attachment: fixed;
   font-family: 'Roboto', sans-serif;

@@ -2,18 +2,19 @@ import React from 'react'
 import Navbar from '../components/Navbar'
 import { BsLinkedin, BsGithub, BsTwitter } from 'react-icons/bs';
 import { motion } from 'framer-motion';
+import Wrapper from '../components/Wrapper';
 
 
 export default function Home() {
-    const text = "Bagus Nugroho";
+    const text = "HELLO I'M BAGUS";
     const letters = text.split('');
 
     return (
-        <motion.div initial={{opacity: 0, y: -500}} animate={{opacity: 1, y: 0}} transition={{duration: 1}}>
-            <Navbar />
+        <Wrapper>
+            <Navbar className='bg-transparent' />
             <main  className='flex justify-center items-center mx-auto min-h-screen'>
                 <div className='flex justify-center items-center flex-col'>
-                    <h1 className='text-[60px] text-center font-bold text-slate-50 cursor-pointer'>
+                    <h1 className='text-4xl md:text-6xl text-center font-bold text-slate-50 cursor-pointer'>
                         {letters.map((letter, index) => {
                             if(letter != " ") {
                                 return (
@@ -30,7 +31,7 @@ export default function Home() {
                             }
                         })} 
                     </h1>
-                    <p className='text-center text-xl font-semibold text-slate-50'>I'm a frontend developer, Lorem ipsum dolor sit amet.</p>
+                    <p className='text-center text-xl md:text-2xl font-semibold text-slate-50'>I'm a frontend developer</p>
                     <ul className='mt-3 flex gap-x-3'>
                         <li>
                             <a href="">
@@ -50,6 +51,6 @@ export default function Home() {
                     </ul>
                 </div>          
             </main>
-        </motion.div>
+        </Wrapper>
     )
 }
